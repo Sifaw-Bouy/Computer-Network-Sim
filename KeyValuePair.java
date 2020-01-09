@@ -1,11 +1,4 @@
-package project4;
-//done
-//This class represents a key-value pair. It is completed for you,
-//but you need to add JavaDocs.
 
-//--------------------------------------------------------
-// DO NOT EDIT ANYTHING BELOW THIS LINE (except to add JavaDocs)
-//--------------------------------------------------------
 /**
  * main class for holding K/V pairs.
  * @author Sifaw Bouylazane.
