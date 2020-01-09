@@ -3,8 +3,7 @@ This was the final project for my data structures class in which I recode differ
 # Original Rep.
 https://github.com/gildir/CS310_p4_Fall19
 # Testing via command promt
-To visual the network, you put the given files into a single directory, then using the command line below to complie:
-           javac -cp .;310libs.jar *.java// this will complie all the java files
-
+To visual the network, you put the given files into a single directory, then using the command line below to complie: 
+          Markup : 1. javac -cp .;310libs.jar *.java
 
 
