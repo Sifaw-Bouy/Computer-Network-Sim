@@ -1,5 +1,3 @@
-package project4;
-//done
 //This structure is an array where each entry is the head of its own
 //linked list. The linked lists are made up of "bare nodes" (i.e.
 //they are not "wrapped" in a nice linked list class). Each node
@@ -51,9 +49,8 @@ public class ArrayOfListsOfPairs<K,V> {
 	//provided constructor (see the do-not-edit section)
 	//and the Node class is also defined there.
 	
-	// Your code goes here!
-	//WHAT OTHER METHODS U NEED:
-	//add();remove();insert();
+	
+	
 	//So this class well be used by hashtable and Network. 
 	/**
 	 * holds the storage.
@@ -119,7 +116,7 @@ public class ArrayOfListsOfPairs<K,V> {
 		int index= getIndex(pair.getKey());//getting index
 		if(!contains(pair.getKey())) {
 			if(storage[index]==null){
-				storage[index]=nodeP;//might need to add public m that keeps track of this heads/vertex(Netwoork);
+				storage[index]=nodeP;
 				numPairs++;
 				isAdded=true;
 			}else{//going trough linked list
@@ -236,7 +233,7 @@ public class ArrayOfListsOfPairs<K,V> {
 	 * @return boolean value
 	 **/
 	public boolean remove(K key) {
-		//removes a KeyValuePair/Node
+		//removes a KeyValuePair
 		boolean isRemoved=false;
 		int index= getIndex(key);
 
@@ -283,7 +280,6 @@ public class ArrayOfListsOfPairs<K,V> {
 	 * @return boolean value.
 	 **/
 	public boolean changeVal(K key, V value) {
-		//this like your removed method, you can't set a val thus you need to change the node.
 		boolean changed=false;
 		int index= getIndex(key);
 		Node<K,V> head= storage[index];
@@ -368,8 +364,7 @@ public class ArrayOfListsOfPairs<K,V> {
 	 * @return String value.
 	 * */
 	public String toString() {
-		//you may edit this to make string representations of your
-		//lists for testing
+		
 		return super.toString();
 	}
 	/**
@@ -383,14 +378,14 @@ public class ArrayOfListsOfPairs<K,V> {
 		KeyValuePair<Integer,String> pair4= new KeyValuePair<Integer,String>(2,"my");
 		KeyValuePair<Integer,String> pair5= new KeyValuePair<Integer,String>(3,"name");
 		KeyValuePair<Integer,String> pair6= new KeyValuePair<Integer,String>(4,"is");
-		KeyValuePair<Integer,String> pair7= new KeyValuePair<Integer,String>(5,"is");
-		KeyValuePair<Integer,String> pair8= new KeyValuePair<Integer,String>(14,"is");
-		KeyValuePair<Integer,String> pair9= new KeyValuePair<Integer,String>(15,"is");
-		KeyValuePair<Integer,String> pair10= new KeyValuePair<Integer,String>(18,"is");
-		KeyValuePair<Integer,String> pair11= new KeyValuePair<Integer,String>(16,"is");
-		KeyValuePair<Integer,String> pair12= new KeyValuePair<Integer,String>(19,"is");
-		KeyValuePair<Integer,String> pair13= new KeyValuePair<Integer,String>(20,"is");
-		KeyValuePair<Integer,String> pair2= new KeyValuePair<Integer,String>(23,"is");
+		KeyValuePair<Integer,String> pair7= new KeyValuePair<Integer,String>(5,"Sifa");
+		KeyValuePair<Integer,String> pair8= new KeyValuePair<Integer,String>(14,"how");
+		KeyValuePair<Integer,String> pair9= new KeyValuePair<Integer,String>(15,"are");
+		KeyValuePair<Integer,String> pair10= new KeyValuePair<Integer,String>(18,"you");
+		KeyValuePair<Integer,String> pair11= new KeyValuePair<Integer,String>(16,"yes");
+		KeyValuePair<Integer,String> pair12= new KeyValuePair<Integer,String>(19,"Im");
+		KeyValuePair<Integer,String> pair13= new KeyValuePair<Integer,String>(20,"good");
+		KeyValuePair<Integer,String> pair2= new KeyValuePair<Integer,String>(23,"thank");
 		System.out.println("-------addM----------");
 		System.out.println(list.addPair(pair3));
 		System.out.println(list.contains(pair3.getKey())+" is in lst");
@@ -424,7 +419,7 @@ public class ArrayOfListsOfPairs<K,V> {
 		System.out.println(list.changeVal(14, "myyy"));
 		System.out.println(list.changeVal(18, "yay"));
 		
-		//		System.out.println(Arrays.toString(list.getAr()));
+		//System.out.println(Arrays.toString(list.getAr()));
 		for(Node<Integer, String> e:list.getAr()) {
 			if(e!=null) {
 				if(e.next!=null) {
@@ -446,7 +441,7 @@ public class ArrayOfListsOfPairs<K,V> {
 		System.out.println(list.getPair(4));
 		System.out.println("-------clearM-------");
 		list.clear();
-		//		System.out.println(Arrays.toString(list.getAr()));
+		//System.out.println(Arrays.toString(list.getAr()));
 		
 		
 		
@@ -456,7 +451,7 @@ public class ArrayOfListsOfPairs<K,V> {
 	
 	
 	//--------------------------------------------------------
-	// DO NOT EDIT ANYTHING BELOW THIS LINE (except to add JavaDocs)
+	// DO NOT EDIT ANYTHING BELOW THIS LINE
 	//--------------------------------------------------------
 	
 	//This is what one node in one linked list looks like
@@ -465,7 +460,6 @@ public class ArrayOfListsOfPairs<K,V> {
 	 * @param <K> key.
 	 * @param <V> value.
 	 * @author Sifaw Bouylazane.
-	 * @version unknown.
 	 * */
 	public static class Node<K,V> {
 		//it contains one key-value pair
