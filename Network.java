@@ -1,4 +1,3 @@
-package project4;
 
 import edu.uci.ics.jung.graph.Graph;
 import edu.uci.ics.jung.graph.DirectedGraph;
