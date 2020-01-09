@@ -1,5 +1,5 @@
 package project4;
-//done
+
 import edu.uci.ics.jung.graph.Graph;
 import edu.uci.ics.jung.graph.DirectedGraph;
 
@@ -9,9 +9,7 @@ import edu.uci.ics.jung.graph.util.EdgeType;
 
 import org.apache.commons.collections15.Factory;
 
-//You may use the Java Collections Framework in this part of your
-//project, but note that your primary internal structure is an
-//ArrayOfListsOfPairs, you may still find some of these useful
+
 import java.util.*;
 /**
  * Overall class that implements the network.
@@ -497,7 +495,7 @@ public class Network implements Graph<Host,Connection>, DirectedGraph<Host,Conne
 	}
 	
 	//--------------------------------------------------------
-	// testing code goes here... edit this as much as you want!
+	// testing code goes here.
 	//--------------------------------------------------------
 	/**
 	 * gets string representation of the graph.
@@ -678,12 +676,6 @@ public class Network implements Graph<Host,Connection>, DirectedGraph<Host,Conne
 			System.out.println("Yay");
 		}
 	}
-	
-	//********************************************************************************
-	// YOU MAY, BUT DON'T NEED TO, EDIT THINGS IN THIS SECTION, BUT DON'T BREAK IT...
-	// THERE ARE MUCH MORE OPTIMAL WAYS TO DO MANY OF THESE METHODS, SO IT MIGHT BE
-	// GOOD TO LOOK HERE IF YOUR CODE IS SLOWER THAN IT NEEDS TO BE.
-	//********************************************************************************
 	
 	/**
 	 * Returns true if v1 is a predecessor of v2 in this graph.
@@ -1071,8 +1063,7 @@ public class Network implements Graph<Host,Connection>, DirectedGraph<Host,Conne
 		return addEdge(edge, vs[0], vs[1], edgeType);
 	}
 	
-	//********************************************************************************
-	//   DO NOT EDIT ANYTHING BELOW THIS LINE EXCEPT TO ADD/CORRECT JAVADOCS
+	
 	//********************************************************************************
 	
 	//This will be used to check that you are setting
