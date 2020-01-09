@@ -1,5 +1,4 @@
-package project4;
-//done
+
 //This is mostly done for you. The remaining part is to
 //do just a little setup work for Dijkstra's shortest
 //path algorithm and the setting up of the routing tables.
