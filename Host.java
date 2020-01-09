@@ -1,5 +1,4 @@
-package project4;
-//done
+
 //This class represents a "host" in a network (i.e. a computer or
 //a router depending on the network structure). It is complete and
 //you do not need to edit it for this project.
