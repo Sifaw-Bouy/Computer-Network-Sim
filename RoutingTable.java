@@ -1,8 +1,3 @@
-package project4;
-//done
-//This class is completed for you. No need to edit.
-//But you might want to know what it does if you're
-//debugging your project.
 
 /**
  *  A routing table for a host in the network. This
