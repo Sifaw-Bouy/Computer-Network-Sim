@@ -1,5 +1,4 @@
-package project4;
-//done
+
 //This class represents a "connection" in a network (e.g. a wired connection,
 //a bluetooth connection, etc. depending on the network structure). It is
 //complete and you do not need to edit it for this project.
