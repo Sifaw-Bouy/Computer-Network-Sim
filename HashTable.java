@@ -1,5 +1,4 @@
-package project4;
-//done
+
 //Hash table with separate chaining. Each key and value gets
 //placed together as a single entry in the table. The hash code
 //of a key is used to place the pair in the table and to look
