@@ -15,5 +15,6 @@ To change the amount vertices/networks(Max is 250) generated you can follow the 
 ```
 java -cp.;310libs.jar SIMGUI 50 0.25
 ```
-Here is short gif simulation:
+Here is short gif simulation :
+
 ![](network.gif)
