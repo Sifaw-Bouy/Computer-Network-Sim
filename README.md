@@ -9,11 +9,11 @@ javac -cp .;310libs.jar *.java
 ```
 Then run the SIMGUI class:
 ```
-java -cp.;310libs.jar SIMGUI
+java -cp .;310libs.jar SIMGUI
 ```
 To change the amount vertices/networks(Max is 250) generated you can follow the above command with an postive integer and to change the chance of a connection happing between a network type a number after amount of networks between 0-1 in decimal.
 ```
-java -cp.;310libs.jar SIMGUI 50 0.25
+java -cp .;310libs.jar SIMGUI 50 0.25
 ```
 Here is short gif simulation :
 
